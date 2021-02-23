@@ -14,10 +14,15 @@ function Header({searchData, func, imageFunc}) {
         searchData(search)
     }
 
+    const onSubmit = (e) => {
+        e.preventDefault()
+        getImage()
+    }
+
     return (
         <div className="header">
             <img className="header__logo" src={logo} alt="Logo"/>
-            <form className="header__input">
+            <form className="header__input" onSubmit={onSubmit}>
                 <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder="Search image..."/>
                 <IconButton onClick={getImage}>
                     <SearchIcon />
