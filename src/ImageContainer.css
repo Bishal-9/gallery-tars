@@ -1,0 +1,76 @@
+.imageContainer {
+    background-color: #1e212d;
+    width: min-content;
+    height: min-content;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    /* float: left; */
+}
+
+.imageContainer__image {
+    object-fit: contain;
+    border-radius: 20px;
+    width: min-content;
+    height: auto;
+}
+
+.imageContainer__name {
+    color: #faf3e0;
+}
+
+.imageContainer__like {
+    color: #eabf9f;
+}
+
+.imageContainer__modalImage {
+    max-width: 70vw;
+    width: auto;
+    height: auto;
+    max-height: 70vh;
+    border-radius: 25px;
+}
+
+.imageContainer__modalContainer {
+    border: 3px solid #1e212d;
+    boxShadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.imageContainer__fade {
+    background-color: #faf3e0;
+    border-radius: 30px;
+    outline-width: 0;
+}
+
+.imageContainer__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer__avatar {
+    float: right;
+}
+
+.imageContainer__modalUser {
+    padding-top: 10px;
+}
+
+hr {
+    width: 7vw;
+    margin: auto;
+    margin-top: 15px;
+    border-top: dotted;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-width: 10px;
+    color: #1e212d;
+}
+
+h2 {
+    margin-top: 30px;
+}
